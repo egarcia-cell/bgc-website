@@ -1,0 +1,330 @@
+<!doctype html>
+<html lang="en" data-lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Business Growth Consultants | Bookkeeping, Payroll & Growth for Milwaukee Businesses</title>
+<meta name="description" content="Business Growth Consultants helps small businesses in Milwaukee organize their numbers, save hours every week and grow sales with a clear plan. Hablamos español.">
+<meta property="og:title" content="Business Growth Consultants">
+<meta property="og:description" content="From red numbers to black numbers. Bookkeeping, payroll, marketing and growth for Milwaukee small businesses.">
+<meta property="og:image" content="assets/bgc-logo.png">
+<link rel="icon" type="image/png" href="assets/favicon.png">
+<link rel="apple-touch-icon" href="assets/apple-touch-icon.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Archivo:wght@500;600;700;800&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"ProfessionalService","name":"Business Growth Consultants LLC","slogan":"Building Your Business Future, Today","telephone":"+1-414-436-1844","email":"info@teambgc.com","url":"https://teambgc.com","areaServed":"Milwaukee, WI","address":{"@type":"PostalAddress","addressLocality":"Milwaukee","addressRegion":"WI","addressCountry":"US"},"openingHours":"Mo-Sa 08:00-18:00","knowsLanguage":["en","es"]}
+</script>
+<style>
+:root{
+  --red:#dd0d4a; --red-ink:#b40a3c; --gray:#b8b0b0; --gray-2:#8c8585; --black:#1b1b1c;
+  --paper:#ffffff; --soft:#f6f5f4; --ink:#1b1b1c; --muted:#5d5a5a; --line:#e3e0de;
+  --display:"Archivo","Arial Narrow",Arial,sans-serif;
+  --body:"Inter",system-ui,-apple-system,"Segoe UI",sans-serif;
+  color-scheme:light;
+}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth;-webkit-text-size-adjust:100%}
+body{margin:0;background:var(--paper);color:var(--ink);font:17px/1.6 var(--body)}
+img{max-width:100%;display:block}
+a{color:inherit}
+p{margin:0}
+.wrap{width:100%;max-width:1160px;margin-inline:auto;padding-inline:20px}
+h1,h2,h3{font-family:var(--display);margin:0;line-height:1.05;letter-spacing:-.015em;text-wrap:balance}
+h2{font-size:clamp(34px,4.8vw,52px);font-weight:800}
+h3{font-size:22px;font-weight:700;letter-spacing:-.005em}
+.eyebrow{font:600 12px/1 var(--body);letter-spacing:.18em;text-transform:uppercase;color:var(--red-ink)}
+:focus-visible{outline:3px solid var(--red);outline-offset:3px}
+section[id]{scroll-margin-top:84px}
+
+/* header */
+.top{position:sticky;top:0;z-index:20;background:rgba(255,255,255,.96);backdrop-filter:saturate(1.4) blur(8px);border-bottom:1px solid var(--line)}
+.top .wrap{display:flex;align-items:center;gap:22px;min-height:76px}
+.logo{margin-right:auto}
+.logo img{height:64px;width:auto}
+nav.links{display:flex;gap:26px;font-size:15px;font-weight:500}
+nav.links a{text-decoration:none;color:var(--muted)}
+nav.links a:hover{color:var(--black)}
+.lang{display:inline-flex;border:1px solid var(--line);border-radius:999px;padding:3px;gap:2px}
+.lang button{font:600 12px var(--body);letter-spacing:.06em;border:0;background:none;color:var(--muted);padding:6px 10px;border-radius:999px;cursor:pointer}
+.lang button[aria-pressed="true"]{background:var(--black);color:#fff}
+.cta-top{background:var(--red);color:#fff;text-decoration:none;font-weight:600;font-size:15px;padding:10px 16px;border-radius:6px;white-space:nowrap}
+.cta-top:hover{background:var(--red-ink)}
+@media (max-width:960px){nav.links{display:none}}
+@media (max-width:560px){.top .wrap{gap:10px;min-height:64px}.logo img{height:40px}.cta-top{font-size:14px;padding:9px 12px}}
+
+/* hero */
+.hero{padding-block:84px 76px;border-bottom:1px solid var(--line);background:linear-gradient(180deg,#fff 0%,#fff 60%,var(--soft) 100%)}
+.hero .wrap{display:grid;grid-template-columns:minmax(0,1.15fr) minmax(0,.85fr);gap:56px;align-items:center}
+.hero h1{font-size:clamp(44px,7vw,84px);font-weight:800;letter-spacing:-.03em;margin-top:18px}
+.hero h1 .r{color:var(--red)}
+.hero h1 .k{color:var(--black)}
+.hero .lead{font-size:19px;color:var(--muted);max-width:48ch;margin-top:22px}
+.ctas{display:flex;flex-wrap:wrap;gap:12px;margin-top:30px}
+.btn{display:inline-block;font:600 16px var(--body);text-decoration:none;padding:14px 22px;border-radius:6px;border:2px solid var(--black)}
+.btn.solid{background:var(--black);color:#fff}
+.btn.solid:hover{background:#000}
+.btn.line{color:var(--black)}
+.btn.line:hover{background:var(--soft)}
+.facts{display:flex;flex-wrap:wrap;gap:14px 34px;margin-top:40px;padding-top:22px;border-top:1px solid var(--line);font-size:14px;color:var(--muted)}
+.facts b{display:block;color:var(--black);font-weight:600;font-size:15px}
+
+/* P&L card: the red-to-black story */
+.pnl{background:#fff;border:1px solid var(--line);border-radius:10px;box-shadow:0 24px 50px rgba(27,27,28,.10);padding:24px;font-variant-numeric:tabular-nums}
+.pnl .hd{display:flex;justify-content:space-between;align-items:baseline;border-bottom:2px solid var(--black);padding-bottom:10px;font:600 11px var(--body);letter-spacing:.14em;text-transform:uppercase;color:var(--muted)}
+.pnl .hd b{font:800 18px var(--display);letter-spacing:-.01em;text-transform:none;color:var(--black)}
+.pnl .bars{display:grid;grid-template-columns:repeat(6,1fr);align-items:end;gap:10px;height:170px;margin:22px 0 8px;position:relative}
+.pnl .bars::after{content:"";position:absolute;left:0;right:0;top:62%;border-top:1px dashed var(--gray)}
+.pnl .bar{border-radius:4px 4px 0 0;position:relative}
+.pnl .bar.neg{align-self:start;margin-top:calc(170px * .62);border-radius:0 0 4px 4px}
+.pnl .months{display:grid;grid-template-columns:repeat(6,1fr);gap:10px;font-size:11px;color:var(--muted);text-align:center;letter-spacing:.06em}
+.pnl .rows{margin-top:16px;border-top:1px solid var(--line)}
+.pnl .row{display:flex;justify-content:space-between;padding:9px 0;border-bottom:1px solid var(--line);font-size:15px}
+.pnl .row span:last-child{font-weight:600}
+.pnl .neg-t{color:var(--red)}
+.pnl .pos-t{color:var(--black)}
+.pnl .note{margin-top:12px;font-size:12px;color:var(--gray-2)}
+@media (max-width:900px){.hero .wrap{grid-template-columns:minmax(0,1fr)}.hero{padding-block:52px 56px}}
+
+.block{padding-block:88px}
+.soft{background:var(--soft);border-block:1px solid var(--line)}
+.head{display:grid;gap:14px;max-width:64ch;margin-bottom:42px}
+.head p{color:var(--muted)}
+
+/* services */
+.svc{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:18px;counter-reset:n}
+.card{background:#fff;border:1px solid var(--line);border-radius:8px;padding:26px 24px;display:flex;flex-direction:column;gap:10px;position:relative;counter-increment:n}
+.card::before{content:"0" counter(n);font:800 14px var(--display);color:var(--gray-2);letter-spacing:.04em}
+.card:nth-child(3n+1){border-top:4px solid var(--red)}
+.card:nth-child(3n+2){border-top:4px solid var(--gray)}
+.card:nth-child(3n){border-top:4px solid var(--black)}
+.card .res{color:var(--black);font-weight:600;font-size:16px}
+.card .inc{color:var(--muted);font-size:15px}
+@media (max-width:900px){.svc{grid-template-columns:repeat(2,minmax(0,1fr))}}
+@media (max-width:600px){.svc{grid-template-columns:minmax(0,1fr)}}
+
+/* steps */
+.steps{list-style:none;margin:0;padding:0;display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:0;counter-reset:s}
+.steps li{counter-increment:s;padding:0 22px 0 0;position:relative}
+.steps .dot{display:flex;align-items:center;gap:0;margin-bottom:18px}
+.steps .dot i{width:44px;height:44px;border-radius:50%;display:grid;place-items:center;font:800 17px var(--display);font-style:normal;color:#fff;flex:none}
+.steps .dot::after{content:"";height:2px;flex:1;background:var(--line)}
+.steps li:last-child .dot::after{display:none}
+.steps li:nth-child(1) i{background:var(--red)}
+.steps li:nth-child(2) i{background:#c46a7f}
+.steps li:nth-child(3) i{background:var(--gray-2)}
+.steps li:nth-child(4) i{background:var(--black)}
+.steps p{margin-top:8px;color:var(--muted);font-size:15px}
+@media (max-width:900px){.steps{grid-template-columns:repeat(2,minmax(0,1fr));gap:34px 0}.steps li:nth-child(2) .dot::after{display:none}}
+@media (max-width:560px){.steps{grid-template-columns:minmax(0,1fr)}.steps .dot::after{display:none}}
+
+/* about */
+.about{display:grid;grid-template-columns:minmax(0,.9fr) minmax(0,1.1fr);gap:56px;align-items:center}
+.about .mark{background:#fff;border:1px solid var(--line);border-radius:10px;padding:40px;display:grid;place-items:center;min-height:100%}
+.about .mark img{width:100%;height:auto}
+.about .story p+p{margin-top:16px}
+.about .story p{color:var(--muted)}
+.about .story strong{color:var(--black)}
+.partners{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:16px;margin-top:28px}
+.partner{border:1px solid var(--line);border-radius:8px;padding:18px 20px;background:#fff}
+.partner b{display:block;font:700 19px var(--display)}
+.partner span{font-size:14px;color:var(--muted)}
+.why{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:18px;margin-top:64px}
+.why div{padding-top:16px;border-top:3px solid var(--black)}
+.why div:first-child{border-color:var(--red)}
+.why div:nth-child(2){border-color:var(--gray)}
+.why b{display:block;font:700 20px var(--display);margin-bottom:6px}
+.why p{color:var(--muted);font-size:15px}
+@media (max-width:900px){.about{grid-template-columns:minmax(0,1fr)}.why{grid-template-columns:minmax(0,1fr)}}
+@media (max-width:480px){.partners{grid-template-columns:minmax(0,1fr)}}
+
+/* contact */
+.contact{display:grid;grid-template-columns:minmax(0,.75fr) minmax(0,1.25fr);gap:44px;align-items:start}
+.info{background:var(--black);color:#eee;border-radius:10px;overflow:hidden}
+.info .row{padding:20px 24px;border-bottom:1px solid rgba(255,255,255,.1)}
+.info .row:last-child{border-bottom:0}
+.info .k{font:600 11px var(--body);letter-spacing:.16em;text-transform:uppercase;color:#ff5d8a}
+.info .v{margin-top:4px;font-size:18px;font-weight:500;overflow-wrap:anywhere}
+.info a{text-decoration:none}
+.info a:hover{text-decoration:underline}
+.formbox{background:#fff;border:1px solid var(--line);border-radius:10px;overflow:hidden}
+.formbox iframe{display:block;width:100%;height:1350px;border:0;background:transparent}
+.formnote{font-size:13px;color:var(--muted);margin-top:12px}
+@media (max-width:900px){.contact{grid-template-columns:minmax(0,1fr)}.formbox iframe{height:1650px}}
+
+footer{background:var(--black);color:#a9a4a4;font-size:14px;padding-block:36px}
+footer .wrap{display:flex;flex-wrap:wrap;gap:18px 40px;justify-content:space-between;align-items:center}
+footer b{color:#fff}
+footer .chip3{display:inline-flex;gap:4px;margin-right:10px;vertical-align:middle}
+footer .chip3 i{width:12px;height:12px;border-radius:2px;display:block}
+
+html:not([data-lang="es"]) [data-es],html[data-lang="es"] [data-en]{display:none!important}
+@media (prefers-reduced-motion:reduce){html{scroll-behavior:auto}}
+</style>
+</head>
+<body>
+
+<header class="top">
+  <div class="wrap">
+    <a class="logo" href="#top" aria-label="Business Growth Consultants"><img src="assets/bgc-logo.png" alt="Business Growth Consultants" width="605" height="276"></a>
+    <nav class="links" aria-label="Main">
+      <a href="#services"><span data-en>Services</span><span data-es>Servicios</span></a>
+      <a href="#process"><span data-en>How We Work</span><span data-es>Cómo trabajamos</span></a>
+      <a href="#about"><span data-en>About</span><span data-es>Nosotros</span></a>
+      <a href="#contact"><span data-en>Contact</span><span data-es>Contacto</span></a>
+    </nav>
+    <div class="lang" role="group" aria-label="Language / Idioma">
+      <button type="button" data-set-lang="en" aria-pressed="true">EN</button>
+      <button type="button" data-set-lang="es" aria-pressed="false">ES</button>
+    </div>
+    <a class="cta-top" href="#contact"><span data-en>Book a diagnostic</span><span data-es>Agenda diagnóstico</span></a>
+  </div>
+</header>
+
+<main id="top">
+<section class="hero">
+  <div class="wrap">
+    <div>
+      <p class="eyebrow"><span data-en>Milwaukee small business consulting</span><span data-es>Consultoría para pequeños negocios en Milwaukee</span></p>
+      <h1><span data-en>From <span class="r">red numbers</span> to <span class="k">black numbers.</span></span><span data-es>De <span class="r">números rojos</span> a <span class="k">números negros.</span></span></h1>
+      <p class="lead"><span data-en>Business Growth Consultants helps small businesses in Milwaukee organize their numbers, save hours every week, and grow sales with a clear plan.</span><span data-es>Business Growth Consultants ayuda a pequeños negocios en Milwaukee a ordenar sus números, ahorrar horas cada semana y aumentar sus ventas con un plan claro.</span></p>
+      <div class="ctas">
+        <a class="btn solid" href="#contact"><span data-en>Book your business diagnostic</span><span data-es>Agenda tu diagnóstico de negocio</span></a>
+        <a class="btn line" href="tel:+14144361844"><span data-en>Call (414) 436-1844</span><span data-es>Llama al (414) 436-1844</span></a>
+      </div>
+      <div class="facts">
+        <div><b><span data-en>Weekly P&amp;L</span><span data-es>P&amp;L semanal</span></b><span data-en>Know if you made money</span><span data-es>Sabe si ganaste dinero</span></div>
+        <div><b><span data-en>Mon–Sat, 8 AM–6 PM</span><span data-es>Lun–Sáb, 8 AM–6 PM</span></b><span data-en>Office hours</span><span data-es>Horario</span></div>
+        <div><b>Hablamos español</b><span data-en>English &amp; Spanish service</span><span data-es>Atención en inglés y español</span></div>
+      </div>
+    </div>
+    <aside class="pnl" aria-label="Illustration: monthly net profit moving from loss to profit">
+      <div class="hd"><b><span data-en>Net profit</span><span data-es>Utilidad neta</span></b><span><span data-en>Example client</span><span data-es>Cliente ejemplo</span></span></div>
+      <div class="bars" aria-hidden="true">
+        <div class="bar neg" style="height:48px;background:var(--red)"></div>
+        <div class="bar neg" style="height:30px;background:var(--red)"></div>
+        <div class="bar neg" style="height:12px;background:#e57193"></div>
+        <div class="bar" style="height:18px;margin-bottom:calc(170px * .38);background:var(--gray)"></div>
+        <div class="bar" style="height:38px;margin-bottom:calc(170px * .38);background:var(--gray-2)"></div>
+        <div class="bar" style="height:62px;margin-bottom:calc(170px * .38);background:var(--black)"></div>
+      </div>
+      <div class="months" aria-hidden="true"><span>M1</span><span>M2</span><span>M3</span><span>M4</span><span>M5</span><span>M6</span></div>
+      <div class="rows">
+        <div class="row"><span><span data-en>Before BGC</span><span data-es>Antes de BGC</span></span><span class="neg-t">(−) <span data-en>Loss</span><span data-es>Pérdida</span></span></div>
+        <div class="row"><span><span data-en>Books, payroll, plan</span><span data-es>Cuentas, nómina, plan</span></span><span><span data-en>In order</span><span data-es>En orden</span></span></div>
+        <div class="row"><span><span data-en>Goal</span><span data-es>Meta</span></span><span class="pos-t">(+) <span data-en>Profit</span><span data-es>Ganancia</span></span></div>
+      </div>
+      <p class="note"><span data-en>Illustration only. Red → gray → black is the path our logo stands for.</span><span data-es>Solo ilustración. Rojo → gris → negro es el camino que representa nuestro logo.</span></p>
+    </aside>
+  </div>
+</section>
+
+<section class="block" id="services">
+  <div class="wrap">
+    <div class="head">
+      <p class="eyebrow"><span data-en>What we do</span><span data-es>Lo que hacemos</span></p>
+      <h2><span data-en>Pick what you need, or let us run the whole back office</span><span data-es>Elige lo que necesitas, o deja que llevemos toda la parte administrativa</span></h2>
+      <p><span data-en>Every plan starts with a setup that puts your systems in order.</span><span data-es>Cada plan empieza con una configuración que pone tus sistemas en orden.</span></p>
+    </div>
+    <div class="svc">
+      <article class="card"><h3><span data-en>Bookkeeping &amp; Reports</span><span data-es>Contabilidad y reportes</span></h3><p class="res"><span data-en>Know where every dollar goes.</span><span data-es>Sabe a dónde va cada dólar.</span></p><p class="inc"><span data-en>Income and expense recording, monthly bank reconciliation, weekly P&amp;L, monthly and quarterly reports.</span><span data-es>Registro de ingresos y gastos, conciliación bancaria mensual, P&amp;L semanal, reportes mensuales y trimestrales.</span></p></article>
+      <article class="card"><h3><span data-en>Payroll &amp; Compliance</span><span data-es>Nómina y cumplimiento</span></h3><p class="res"><span data-en>Pay your team right and on time.</span><span data-es>Paga a tu equipo bien y a tiempo.</span></p><p class="inc"><span data-en>Payroll processing, paychecks, state sales tax filing.</span><span data-es>Procesamiento de nómina, cheques, declaración del impuesto estatal sobre ventas.</span></p></article>
+      <article class="card"><h3><span data-en>Sales &amp; Growth Strategy</span><span data-es>Estrategia de ventas y crecimiento</span></h3><p class="res"><span data-en>Grow with a plan, not with luck.</span><span data-es>Crece con un plan, no con suerte.</span></p><p class="inc"><span data-en>Sales analysis, growth goals, a monthly strategy meeting with the owner.</span><span data-es>Análisis de ventas, metas de crecimiento, una junta de estrategia al mes con el dueño.</span></p></article>
+      <article class="card"><h3><span data-en>Marketing &amp; Social Media</span><span data-es>Publicidad y redes sociales</span></h3><p class="res"><span data-en>Stay in front of your customers.</span><span data-es>Mantente a la vista de tus clientes.</span></p><p class="inc"><span data-en>Daily posts, promotion, catering and event calendar management.</span><span data-es>Publicaciones diarias, promoción, manejo del calendario de catering y eventos.</span></p></article>
+      <article class="card"><h3><span data-en>Automation &amp; Systems</span><span data-es>Automatización y sistemas</span></h3><p class="res"><span data-en>Stop doing by hand what a system can do.</span><span data-es>Deja de hacer a mano lo que un sistema puede hacer.</span></p><p class="inc"><span data-en>Lead capture and CRM, automatic reminders and follow-ups, QuickBooks and point-of-sale setup.</span><span data-es>Captación de clientes y CRM, recordatorios y seguimientos automáticos, configuración de QuickBooks y punto de venta.</span></p></article>
+      <article class="card"><h3><span data-en>Business Administration</span><span data-es>Administración del negocio</span></h3><p class="res"><span data-en>Control your costs.</span><span data-es>Controla tus costos.</span></p><p class="inc"><span data-en>Inventory, recipe and purchase cost tracking, equipment depreciation, processes and owner training.</span><span data-es>Control de inventario, recetas y costos de compra, depreciación de equipo, procesos y capacitación al dueño.</span></p></article>
+    </div>
+  </div>
+</section>
+
+<section class="block soft" id="process">
+  <div class="wrap">
+    <div class="head">
+      <p class="eyebrow"><span data-en>How we work</span><span data-es>Cómo trabajamos</span></p>
+      <h2><span data-en>A simple process, the same for every business</span><span data-es>Un proceso sencillo, igual para cada negocio</span></h2>
+    </div>
+    <ol class="steps">
+      <li><div class="dot"><i>1</i></div><h3><span data-en>Diagnostic</span><span data-es>Diagnóstico</span></h3><p><span data-en>We meet, review your numbers and find what is holding your business back.</span><span data-es>Nos reunimos, revisamos tus números y encontramos lo que frena tu negocio.</span></p></li>
+      <li><div class="dot"><i>2</i></div><h3><span data-en>Proposal</span><span data-es>Propuesta</span></h3><p><span data-en>You get a clear plan: services, timeline and price, signed online.</span><span data-es>Recibes un plan claro: servicios, tiempos y precio, firmado en línea.</span></p></li>
+      <li><div class="dot"><i>3</i></div><h3><span data-en>Setup</span><span data-es>Configuración</span></h3><p><span data-en>We organize your accounts, systems and spreadsheets, and train you to use them.</span><span data-es>Organizamos tus cuentas, sistemas y hojas de cálculo, y te enseñamos a usarlos.</span></p></li>
+      <li><div class="dot"><i>4</i></div><h3><span data-en>Monthly service</span><span data-es>Servicio mensual</span></h3><p><span data-en>We run the books, payroll and marketing, send your weekly P&amp;L, and meet with you every month.</span><span data-es>Llevamos la contabilidad, la nómina y la publicidad, te mandamos tu P&amp;L cada semana y nos reunimos contigo cada mes.</span></p></li>
+    </ol>
+  </div>
+</section>
+
+<section class="block" id="about">
+  <div class="wrap">
+    <div class="about">
+      <div class="mark"><img src="assets/bgc-mountains.png" alt="Business Growth Consultants mountains logo in red, gray and black" width="600" height="370" loading="lazy"></div>
+      <div class="story">
+        <p class="eyebrow" style="color:var(--red-ink)"><span data-en>About BGC</span><span data-es>Nosotros</span></p>
+        <h2 style="margin:14px 0 20px"><span data-en>Our name and colors</span><span data-es>Nuestro nombre y colores</span></h2>
+        <p><span data-en>In accounting, <strong>red numbers mean a loss</strong> and <strong>black numbers mean a profit</strong>. Our logo moves from red, through gray, to black, because that is the path we walk with every client.</span><span data-es>En contabilidad, <strong>los números rojos son pérdida</strong> y <strong>los números negros son ganancia</strong>. Nuestro logo pasa del rojo, por el gris, al negro, porque ese es el camino que recorremos con cada cliente.</span></p>
+        <p><span data-en>We are business owners too. We run a property services company in Milwaukee, so we know the long days, the paperwork and the pressure of making payroll.</span><span data-es>También somos dueños de negocio. Manejamos una empresa de servicios de propiedades en Milwaukee, así que conocemos los días largos, el papeleo y la presión de pagar la nómina.</span></p>
+        <div class="partners">
+          <div class="partner"><b>Ed Garcia</b><span><span data-en>Partner · Project management, systems and client setup</span><span data-es>Socio · Administración de proyectos, sistemas y configuración de clientes</span></span></div>
+          <div class="partner"><b>Jesus Nanez</b><span><span data-en>Partner · Operations and client relationships</span><span data-es>Socio · Operaciones y relación con clientes</span></span></div>
+        </div>
+      </div>
+    </div>
+    <div class="why">
+      <div><b><span data-en>Clear numbers, every week.</span><span data-es>Números claros, cada semana.</span></b><p><span data-en>No guessing at the end of the year.</span><span data-es>Sin adivinar a fin de año.</span></p></div>
+      <div><b><span data-en>One team, one plan.</span><span data-es>Un equipo, un plan.</span></b><p><span data-en>Books, payroll, marketing and growth in one place.</span><span data-es>Contabilidad, nómina, publicidad y crecimiento en un solo lugar.</span></p></div>
+      <div><b><span data-en>We speak your language.</span><span data-es>Hablamos tu idioma.</span></b><p><span data-en>Service in English and Spanish.</span><span data-es>Atención en inglés y español.</span></p></div>
+    </div>
+  </div>
+</section>
+
+<section class="block soft" id="contact">
+  <div class="wrap">
+    <div class="head">
+      <p class="eyebrow"><span data-en>Contact</span><span data-es>Contacto</span></p>
+      <h2><span data-en>Ready to see your numbers in black?</span><span data-es>¿Listo para ver tus números en negro?</span></h2>
+      <p><span data-en>Tell us about your business and we'll contact you within one business day to schedule your diagnostic.</span><span data-es>Cuéntanos de tu negocio y te contactamos en un día hábil para agendar tu diagnóstico.</span></p>
+    </div>
+    <div class="contact">
+      <div class="info">
+        <div class="row"><div class="k"><span data-en>Phone</span><span data-es>Teléfono</span></div><div class="v"><a href="tel:+14144361844">(414) 436-1844</a></div></div>
+        <div class="row"><div class="k">Email</div><div class="v"><a href="mailto:info@teambgc.com">info@teambgc.com</a></div></div>
+        <div class="row"><div class="k"><span data-en>Hours</span><span data-es>Horario</span></div><div class="v"><span data-en>Monday to Saturday, 8 AM to 6 PM</span><span data-es>Lunes a sábado, 8 AM a 6 PM</span></div></div>
+        <div class="row"><div class="k"><span data-en>Location</span><span data-es>Ubicación</span></div><div class="v">Milwaukee, WI</div></div>
+      </div>
+      <div>
+        <div class="formbox"><iframe id="intake" title="BGC — New Client Request" loading="lazy" src="https://airtable.com/embed/app1HI8fqqzuaV6mQ/pagYxBnmph0EiXdrC/form?prefill_Language=English&amp;hide_Language=true"></iframe></div>
+        <p class="formnote"><span data-en>Prefer to talk? Call (414) 436-1844 or write to info@teambgc.com.</span><span data-es>¿Prefieres hablar? Llama al (414) 436-1844 o escribe a info@teambgc.com.</span></p>
+      </div>
+    </div>
+  </div>
+</section>
+</main>
+
+<footer>
+  <div class="wrap">
+    <div><span class="chip3" aria-hidden="true"><i style="background:var(--red)"></i><i style="background:var(--gray)"></i><i style="background:#fff"></i></span><b>Business Growth Consultants LLC</b></div>
+    <div><span data-en>Building Your Business Future, Today</span><span data-es>Construyendo el futuro de tu negocio, hoy</span></div>
+    <div>info@teambgc.com · (414) 436-1844 · Milwaukee, WI</div>
+    <div>© <span id="yr">2026</span> · Hablamos español</div>
+  </div>
+</footer>
+
+<script>
+(function(){
+  var FORMS = {
+    en: "https://airtable.com/embed/app1HI8fqqzuaV6mQ/pagYxBnmph0EiXdrC/form?prefill_Language=English&hide_Language=true",
+    es: "https://airtable.com/embed/app1HI8fqqzuaV6mQ/pagYeLpf3fXqE2Eh5/form?prefill_Language=Espa%C3%B1ol&hide_Language=true"
+  };
+  var root = document.documentElement, ifr = document.getElementById('intake');
+  function setLang(l){
+    root.setAttribute('data-lang', l); root.lang = l;
+    document.querySelectorAll('[data-set-lang]').forEach(function(b){ b.setAttribute('aria-pressed', b.dataset.setLang === l ? 'true' : 'false'); });
+    if (ifr.getAttribute('src') !== FORMS[l]) ifr.setAttribute('src', FORMS[l]);
+    ifr.title = l === 'es' ? 'BGC — Solicitud de nuevo cliente' : 'BGC — New Client Request';
+  }
+  setLang(new URLSearchParams(location.search).get('lang') === 'es' ? 'es' : 'en');
+  document.querySelectorAll('[data-set-lang]').forEach(function(b){ b.addEventListener('click', function(){ setLang(b.dataset.setLang); }); });
+  document.getElementById('yr').textContent = new Date().getFullYear();
+})();
+</script>
+</body>
+</html>
